@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AccountCell" customModule="Multiple_Users" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="114"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home_Existing_Card" translatesAutoresizingMaskIntoConstraints="NO" id="zqp-M2-wsf">
+                    <rect key="frame" x="5" y="0.0" width="404" height="114"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YmK-7Z-OoJ">
+                    <rect key="frame" x="91.5" y="35.5" width="234.5" height="43"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name and Last name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnM-y7-YGc">
+                            <rect key="frame" x="0.0" y="0.0" width="234.5" height="22.5"/>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User id " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44Y-Md-g6r">
+                            <rect key="frame" x="0.0" y="22.5" width="234.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c50-Zl-kbM">
+                    <rect key="frame" x="75.5" y="18" width="1" height="76"/>
+                    <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Ff8-iK-0pn"/>
+                        <constraint firstAttribute="width" constant="1" id="LmC-22-92G"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3t-YZ-Mbu">
+                    <rect key="frame" x="341" y="19" width="1" height="76"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.87058823529999996" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="cuc-jb-Ntt"/>
+                        <constraint firstAttribute="width" constant="1" id="xnt-pm-bFK"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCf-yS-33m">
+                    <rect key="frame" x="352" y="35" width="40" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="Lz5-0Y-GAi"/>
+                        <constraint firstAttribute="width" constant="40" id="O26-QD-Ukc"/>
+                    </constraints>
+                    <state key="normal" image="Image"/>
+                    <connections>
+                        <action selector="deleteBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="cv5-sY-Aq5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-6l-G7C">
+                    <rect key="frame" x="25" y="43" width="30" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="P4z-Xq-L5b"/>
+                        <constraint firstAttribute="width" constant="30" id="nHE-Yy-h1c"/>
+                    </constraints>
+                    <state key="normal" image="Radio_UnCheck"/>
+                    <connections>
+                        <action selector="radioBtnPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="atg-ta-18k"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="t3t-YZ-Mbu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="19" id="0CO-ql-a7V"/>
+                <constraint firstItem="FmO-6l-G7C" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="8OU-BU-uPY"/>
+                <constraint firstItem="zqp-M2-wsf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="9mq-rQ-cEA"/>
+                <constraint firstItem="aCf-yS-33m" firstAttribute="leading" secondItem="t3t-YZ-Mbu" secondAttribute="trailing" constant="10" id="Jq5-g8-G5S"/>
+                <constraint firstItem="FmO-6l-G7C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="43" id="QG9-yc-Xp5"/>
+                <constraint firstItem="aCf-yS-33m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="35" id="YqV-tY-Ij3"/>
+                <constraint firstItem="c50-Zl-kbM" firstAttribute="leading" secondItem="FmO-6l-G7C" secondAttribute="trailing" constant="20.5" id="ZhA-FM-Gbk"/>
+                <constraint firstItem="zqp-M2-wsf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="b0i-dx-d8x"/>
+                <constraint firstItem="YmK-7Z-OoJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="cBg-DR-eK4"/>
+                <constraint firstAttribute="bottom" secondItem="zqp-M2-wsf" secondAttribute="bottom" id="iyg-Ni-zCq"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zqp-M2-wsf" secondAttribute="trailing" constant="5" id="jFw-rr-aRy"/>
+                <constraint firstItem="t3t-YZ-Mbu" firstAttribute="leading" secondItem="YmK-7Z-OoJ" secondAttribute="trailing" constant="15" id="qBN-oo-UjK"/>
+                <constraint firstItem="c50-Zl-kbM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="tZG-tl-xCA"/>
+                <constraint firstAttribute="trailing" secondItem="aCf-yS-33m" secondAttribute="trailing" constant="22" id="uY0-Q8-hJ7"/>
+                <constraint firstItem="YmK-7Z-OoJ" firstAttribute="leading" secondItem="c50-Zl-kbM" secondAttribute="trailing" constant="15" id="yRd-Vd-meb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deleteBtn" destination="aCf-yS-33m" id="1A0-36-c2t"/>
+                <outlet property="radioBtn" destination="FmO-6l-G7C" id="cyF-Ro-ovg"/>
+                <outlet property="userID" destination="44Y-Md-g6r" id="U5x-CR-WhL"/>
+                <outlet property="userName" destination="lnM-y7-YGc" id="tkq-NO-Pba"/>
+            </connections>
+            <point key="canvasLocation" x="-201.44927536231884" y="91.071428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Home_Existing_Card" width="289" height="140"/>
+        <image name="Image" width="43.666667938232422" height="42.666667938232422"/>
+        <image name="Radio_UnCheck" width="55" height="46"/>
+    </resources>
+</document>

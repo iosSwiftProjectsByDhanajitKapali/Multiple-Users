@@ -46,10 +46,10 @@
             filePath = "Multiple Users/AccountSwitcher/AccountSwitcherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "insertUserToDB(_:_:)"
-            landmarkType = "7">
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -62,10 +62,10 @@
             filePath = "Multiple Users/AccountSwitcher/AccountSwitcherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
-            landmarkName = "insertUserToDB(_:_:)"
-            landmarkType = "7">
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "AccountSwitcherViewController"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,10 +78,10 @@
             filePath = "Multiple Users/AccountSwitcher/AccountSwitcherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
-            landmarkName = "insertUserToDB(_:_:)"
-            landmarkType = "7">
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -94,24 +94,8 @@
             filePath = "Multiple Users/AccountSwitcher/AccountSwitcherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "95C0F364-86D6-4158-B2A0-44E75BB7BF63"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Multiple Users/AccountSwitcher/AccountSwitcherViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +110,8 @@
             filePath = "Multiple Users/AccountSwitcher/AccountSwitcherViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>

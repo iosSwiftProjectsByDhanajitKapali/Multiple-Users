@@ -52,10 +52,10 @@ class AccountSwitcherViewController: UIViewController {
             //what will happen once the user clicks the Add Item btn in the alert
 
             //saving data only if there is some data in the textField
-            if userName.text != "" || userID.text != "" || (userID.text != "" && userName.text != "") {
-                //adding this new user to DB
-                self.insertUserToDB(userName.text!, userID.text!)
-                self.userArray.append(AccountModel(name: userName.text!, id: userID.text!, isParent: "FALSE"))
+            if let user_name = userName.text, !user_name.isEmpty, let user_id = userID.text, !user_id.isEmpty {
+    
+                self.insertUserToDB(user_name, user_id)
+                self.userArray.append(AccountModel(name: user_name, id: user_id, isParent: "FALSE"))
                 self.accountsTableView.reloadData()
             }else{
                 userName.placeholder = "User Name can't be empty"
@@ -92,25 +92,25 @@ extension AccountSwitcherViewController : UITableViewDelegate, UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = accountsTableView.dequeueReusableCell(withIdentifier: "acountsTableViewCell", for: indexPath) as! AccountCell
         
+        //setting the delegate of the cell
         cell.delegate = self
         
         cell.userName.text = userArray[indexPath.row].name
         cell.userID.text = userArray[indexPath.row].id
         cell.userid = userArray[indexPath.row].id
         
-        //setting the delegate of the cell
-       
-        
-        if(indexPath.row == 0){
-            //cell.isUserInteractionEnabled = false
-            cell.deleteBtn.isHidden = true
-        }
         if(indexPath.row == currentUserPosition){
             cell.radioBtn.setImage(UIImage(named: "checked-radio-button"), for: .normal)
             cell.isUserInteractionEnabled = false
             cell.deleteBtn.isHidden = true
         }else{
             cell.radioBtn.setImage(UIImage(named: "unchecked-radio-button"), for: .normal)
+            cell.isUserInteractionEnabled = true
+            cell.deleteBtn.isHidden = false
+        }
+        if(indexPath.row == 0){
+            //cell.isUserInteractionEnabled = false
+            cell.deleteBtn.isHidden = true
         }
         
         return cell
